@@ -19,4 +19,13 @@ function calc(op) {
   }
 
   document.getElementById("output").value = o;
+
+  var newHist = "<p>" + n1 + " " + op + " " + n2 + " " + "=" + " " + o + "</p>";
+  var history = document.getElementById("hist");
+
+  history.innerHTML = newHist + history.innerHTML;
+
+  if (history.children.length > 10) {
+    history.removeChild(history.childNodes[10]);
+  }
 }

@@ -5,6 +5,7 @@ input {
   font-size: 1.2em;
   margin: 15px 70px;
   border-radius: 5px;
+  text-align: right;
 }
 
 input[type="number"]:focus {
@@ -42,15 +43,31 @@ button:hover {
   background-color: whitesmoke;
   display: flex;
   flex-direction: row;
-  align-items: center;
+  justify-content: center;
   margin: auto;
   padding: 40px;
   border-radius: 4px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .calc {
-  width: 50%;
+  width: 30%;
+  height: 560px;
   background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  row-gap: 20px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgb(0, 0, 0, 0.2);
+}
+
+.hist {
+  width: 30%;
+  height: 520px;
+  background-color: rgb(0, 0, 0);
+  color: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -58,4 +75,12 @@ button:hover {
   row-gap: 20px;
   border-radius: 10px;
   box-shadow: 0 8px 16px rgb(0, 0, 0, 0.2);
+}
+
+.hist-title {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.last-op {
+  padding: 2px;
 }
